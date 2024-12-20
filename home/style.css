@@ -20,6 +20,7 @@ body {
   /* centraliza */
   display: grid;
   place-content: center;
+  width: 100%
 }
 
 /* titulo */
@@ -42,7 +43,7 @@ article h1 {
     background-position: 200%;
   }
 }
-/* borda, no caso de querer borda */
+/* borda, no caso de querer radius */
 article ::after {
   content: "";
   height: 10px;
@@ -75,4 +76,14 @@ article ::after {
 
 #links a:hover {
   background-color: #daca883e;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: block;
+  }
+
+  .article {
+    width: 50vw;
+  }
 }

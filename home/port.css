@@ -3,3 +3,78 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --gradient: linear-gradient(
+    to right,
+    #FFDD81 9%,
+    #f6dec1 50%,
+    #c3ced7e9 95%
+  );
+}
+
+body {
+  background: url(./assets/backimg.jpg) no-repeat top center/cover;
+  height: 100vh;
+  /* centraliza */
+  /* ... */
+  width: 100%
+}
+
+header {
+  background: rgba(255, 255, 255, 0.313);
+  display: flex;
+  height: 57px;
+}
+
+header img {
+  position: relative;
+  top: 8px;
+  left: 5px;
+}
+
+header a {
+  color: white;
+  display: flex;
+  font-size: 30px;
+  margin: 10px;
+  align-items: center;
+
+  border-radius: 30%;
+  transition: background 0.3s;
+}
+
+header a:hover {
+  background-color: rgba(255, 255, 255, 0.289);
+}
+
+article {
+  display: grid;
+  place-content: center;
+  width: 100%
+}
+article h1 {
+  margin-top: 10px;
+  font-family: "Italiana", serif;
+  font-weight: 150;
+  font-size: 100px;
+  text-align: center;
+  /* gradiente */
+  background-image: var(--gradient);
+  background-size: 120%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* borda, no caso de querer radius */
+article ::after {
+  content: "";
+  height: 10px;
+  width: 100%;
+  display: block;
+  background-image: var(--gradient);
+  border-radius: 20px;
+  opacity: 30%;
+  margin-top: -10px;
+}
