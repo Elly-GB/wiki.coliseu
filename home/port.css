@@ -21,10 +21,11 @@ body {
   width: 100%
 }
 
+/* ------------------------------------------ Header -------------------------------------------------------------------- */
+
 header {
-  background: rgba(255, 255, 255, 0.313);
   display: flex;
-  height: 57px;
+  height: 50px;
 }
 
 header img {
@@ -51,6 +52,8 @@ header a {
 header a:hover {
   background-color: rgba(255, 255, 255, 0.289);
 }
+
+/* ------------------------------------------------ Main -------------------------------------------------------------- */
 
 article {
   margin-bottom: 1%;
@@ -83,6 +86,8 @@ article ::after {
   opacity: 30%;
   margin-top: -10px;
 }
+
+/* -------------------------------------------- Images ------------------------------------------------------------------ */
 
 section.slider {
   margin: 0 auto;
@@ -165,4 +170,55 @@ section.slider {
 
 #radio3:checked ~ .terceiro {
   margin-left: -50%;
+}
+
+/* -------------------------------------------- tópicos ------------------------------------------------------------------ */
+
+aside {
+  margin-bottom: 1%;
+  display: grid;
+  place-content: center;
+  width: 100%
+}
+
+aside h2 {
+  margin-top: 10px;
+  font-family: "Italiana", serif;
+  font-weight: 150;
+  font-size: 80px;
+  text-align: center;
+  /* gradiente */
+  background-image: var(--gradient);
+  background-size: 120%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* borda, no caso de querer radius */
+aside ::before {
+  content: "";
+  height: 10px;
+  width: 100%;
+  display: block;
+  background-image: var(--gradient);
+  border-radius: 20px;
+  opacity: 30%;
+  margin: 10px 0px;
+}
+
+/* -------------------------------------------- tópicos link. ------------------------------------------------------------------ */
+#topicos {
+  display: grid;
+  place-content: center;
+  display: flex;
+}
+main a {
+  color: rgba(255, 255, 255, 0.683);
+  font-family: "Mohave", serif;
+  font-weight: 100;
+  font-size: 30px;
+  padding: 5px;
+  margin-top: -20px;
+  text-decoration: none;
 }
