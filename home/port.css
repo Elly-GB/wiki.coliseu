@@ -14,11 +14,14 @@
 }
 
 body {
-  background: url(./assets/backimg.jpg) no-repeat top center/cover;
+  background-image: url(./assets/backimg.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   /* centraliza */
   /* ... */
-  width: 100%
+  width: 100%;
 }
 
 /* ------------------------------------------ Header -------------------------------------------------------------------- */
@@ -222,3 +225,43 @@ main a {
   margin-top: -20px;
   text-decoration: none;
 }
+
+/* -------------------------------------------- resumo ------------------------------------------------------------------ */
+
+/* #resumo {
+  display: grid;
+  place-content: center;
+  width: 100%
+} */
+
+/* h3 {
+  margin-top: 10px;
+  font-family: "Italiana", serif;
+  font-weight: 150;
+  font-size: 70px;
+  text-align: center;
+  /* gradiente */
+  /* background-image: var(--gradient);
+  background-size: 33%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+} */
+
+/* #resumo::before {
+  content: "";
+  height: 10px;
+  width: 97%;
+  display: block;
+  background-image: var(--gradient);
+  border-radius: 20px;
+  opacity: 30%;
+  margin: 10px 15px;
+} */
+
+/* -------------------------------------------- resumo ------------------------------------------------------------------ */
+/* 
+#resumo p {
+  font-family: "Mohave", serif;
+  margin: 0px 10px
+} */

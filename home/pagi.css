@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gradient: linear-gradient(
+    to right,
+    #FFDD81 9%,
+    #f6dec1 50%,
+    #c3ced7e9 95%
+  );
+}
+
+body {
+  background-image: url(./assets/backimg.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* centraliza */
+  /* ... */
+  width: 100%;
+}
+
+/* ------------------------------------------ Header -------------------------------------------------------------------- */
+
+header {
+  display: flex;
+  height: 50px;
+}
+
+header img {
+  position: relative;
+  top: 8px;
+  left: 5px;
+}
+
+header a {
+  color: white;
+  display: flex;
+  font-size: 30px;
+  margin: 10px;
+  align-items: center;
+
+  border-radius: 30%;
+  transition: background 0.3s;
+}
+
+#icons {
+  margin-left: 85%;
+}
+
+header a:hover {
+  background-color: rgba(255, 255, 255, 0.289);
+}
+
+/* ------------------------------------------------ Main - Resumo -------------------------------------------------------------- */
+
+article {
+  margin-bottom: 1%;
+  display: grid;
+  place-content: center;
+  width: 100%
+}
+
+article h2 {
+  margin-top: 10px;
+  font-family: "Italiana", serif;
+  font-weight: 150;
+  font-size: 80px;
+  text-align: center;
+  /* gradiente */
+  background-image: var(--gradient);
+  background-size: 120%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* ------------------------------------------------ Texto 1. -------------------------------------------------------------- */
+
+p {
+  font-family: "Mohave", serif;
+  margin: 0px 90px;
+  padding: 5px;
+  color: rgb(244, 241, 223);
+  background-color: #e3d5c43d;
+  border-radius: 10px;
+}
+
+/* ------------------------------------------- Main - Curiosidade -------------------------------------------------------------- */
+
+article h3 {
+  margin-top: 10px;
+  font-family: "Italiana", serif;
+  font-weight: 150;
+  font-size: 80px;
+  text-align: center;
+  /* gradiente */
+  background-image: var(--gradient);
+  background-size: 120%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* ------------------------------------------- Footer -------------------------------------------------------------- */
