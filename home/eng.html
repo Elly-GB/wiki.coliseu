@@ -1,25 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <!-- google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- fontes -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Alice&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Licorice&display=swap"
-      rel="stylesheet"
-    />
+     href="https://fonts.googleapis.com/css2?family=Alice&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Licorice&family=Loved+by+the+King&family=Mohave:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <!-- conexão -->
     <link rel="stylesheet" href="./port.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wiki of Coliseum - English</title>
+    <title>Wiki of Colosseum - English</title>
   </head>
   <body>
     <div id="container">
+      <!-- Icones -->
+      <header>
+        <img src="./assets/logo.png" alt="logo da criadora" />
+        <div id="icons"></div>
+          <a href="https://www.instagram.com/by.gaby_nys/" target="_blank"
+          ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+          <a href="https://github.com/Elly-GB" target="_blank"
+          ><ion-icon name="logo-github"></ion-icon
+         ></a>
+      </header>
+      <!-- Título -->
       <main>
-        <p>Hi</p>
+        <!-- Titulo - Borda -->
+        <article>
+          <h1>COLOSSEUM</h1>
+        </article>
+        <!-- Carrosel de Imagem -->
+        <section class="slider">
+          <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primeiro">
+              <img src="./assets/coOne.jpg" alt=" 1- Coliseu inteiro">
+            </div>
+            <div class="slide-box segundo">
+              <img src="./assets/coTwo.jpg" alt=" 2- Coliseu meio">
+            </div>
+            <div class="slide-box terceiro">
+              <img src="./assets/coT.jpg" alt=" 3- Coliseu dentro">
+            </div>
+            <div class="nav-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+            </div>
+            <div class="nav-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+            </div>
+          </div>
+        </section>
+        </div>
+      </main>
+      <aside>
+        <h2>TOPICS</h2>
+      </aside>
+      <main>
+        <div id="topicos">
+          <a href="./page.html">  Summary </a>
+          <a href="./page.html"> • Curiosity • </a>
+          <a href="./history.html">  History </a>
+        </div>
+        </section>
       </main>
     </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Ligação com JavaScript -->
+    <script src="./port.js"></script>
   </body>
 </html>
