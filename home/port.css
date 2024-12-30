@@ -226,42 +226,4 @@ main a {
   text-decoration: none;
 }
 
-/* -------------------------------------------- resumo ------------------------------------------------------------------ */
-
-/* #resumo {
-  display: grid;
-  place-content: center;
-  width: 100%
-} */
-
-/* h3 {
-  margin-top: 10px;
-  font-family: "Italiana", serif;
-  font-weight: 150;
-  font-size: 70px;
-  text-align: center;
-  /* gradiente */
-  /* background-image: var(--gradient);
-  background-size: 33%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-} */
-
-/* #resumo::before {
-  content: "";
-  height: 10px;
-  width: 97%;
-  display: block;
-  background-image: var(--gradient);
-  border-radius: 20px;
-  opacity: 30%;
-  margin: 10px 15px;
-} */
-
-/* -------------------------------------------- resumo ------------------------------------------------------------------ */
-/* 
-#resumo p {
-  font-family: "Mohave", serif;
-  margin: 0px 10px
-} */
+/* ------------------------------------------- Footer -------------------------------------------------------------- */
